@@ -1,0 +1,302 @@
+@charset "UTF-8";
+
+/* general settings */
+body {
+  font-family: serif;
+  font-size: 110%;
+}
+a {
+  text-decoration: none;
+  color: currentColor;
+}
+.inner {
+  max-width: 950px;
+  width: 90%;
+  margin: 0 auto;
+}
+#outline h2,
+#contents h2,
+#book h2 {
+  text-align: center;
+}
+.suriken {
+  width: 40px;
+  vertical-align: bottom;
+  margin: 0 15px;
+}
+
+@media screen and (max-width:560px) {
+  body {
+    font-size: 100%;
+  }
+  .inner {
+    width: 92%;
+  }
+  #outline h2,
+  #contents h2,
+  #book h2 {
+    font-size: 20px;
+  }
+  .suriken {
+    margin: 0 10px;
+  }
+}
+
+/* header */
+header {
+  background: url(../img/header.jpg) #000 no-repeat center;
+  background-size: cover;
+  text-align: center;
+  color: #fff;
+  font-family: serif;
+  height: 300px;
+  overflow: hidden;
+}
+header h1 {
+  margin: 50px 0 5px;
+}
+header h2 {
+  margin-top: 0;
+}
+.date {
+  font-size: 18px;
+  margin: 2px 0;
+}
+
+@media screen and (max-width: 560px) {
+  header {
+    background-size: cover;
+  }
+}
+
+/* outline */
+
+#outline {
+  background-image: url(../img/suriken_back.png), url(../img/bright-squares.png);
+  background-color: #fff;
+  background-repeat: no-repeat, repeat;
+  background-position: right bottom, left top;
+  background-size: 400px, auto;
+  overflow: hidden;
+  padding: 30px 0 80px;
+}
+#outline h3 {
+  letter-spacing: .4em;
+}
+#outline h3:last-of-type {
+  margin-top: 30px;
+}
+#outline p {
+  font-size: 16px;
+  font-family: sans-serif;
+}
+@media screen and (max-width: 560px) {
+  #outline {
+    background-size: 300px, auto;
+  }
+}
+
+/* contents */
+#contents {
+  background-image: url(../img/suriken_back.png), url(../img/bright-squares.png);
+  background-color: #dfdfdf;
+  background-repeat: no-repeat, repeat;
+  background-position: right bottom, left top;
+  background-size: 400px, auto;
+  overflow: hidden;
+  padding: 30px 0 80px;
+}
+#contents h3 {
+  text-align: center;
+}
+.rlWrapper {
+  display: table;
+  width: 740px;
+  margin: 0 auto;
+}
+.essay {
+  display: table-cell;
+  clear: both;
+}
+.essayList,
+.columnList {
+  width: 300px;
+  padding: 0;
+}
+.essayList li,
+.columnlist li {
+  padding: 25px 0;
+  line-height: 80px;
+  writing-mode: vertical-rl;
+  -webkit-writing-mode: vertical-rl;
+  width: 80px;
+  background: rgba(255,255,255,.5);
+  border-radius: 5px;
+  height: 600px;
+  list-style-type: none;
+  float: right;
+  margin: 0 10px;
+  font-family: serif;
+}
+.essayList li a,
+.columnList li a {
+  display: inline-block;
+  height: 100%;
+  width:100%;
+}
+.essayTitle {
+  font-size: 102%;
+  font-weight: bold;
+}
+.column {
+  display: table-cell;
+  clear: both;
+  padding-left: 40px;
+}
+.column h3 {
+  text-align: center;
+}
+.columnList {
+  width: 400px;
+  padding: 0;
+}
+li.mochiyo {
+  line-height: 40px;
+}
+.contentsCaption {
+  text-align: center;
+}
+.summary {
+  font-size: 22px;
+  text-align: center;
+}
+.summarySub {
+  font-size: 18px;
+}
+.remodal img {
+  max-width: 400px;
+}
+
+@media screen and (max-width: 560px) {
+  #contents {
+    background-size: 300px, auto;
+  }
+  .remodal img {
+    max-width: 200px;
+  }
+}
+@media screen and (max-width: 740px) {
+  .rlWrapper {
+    display: block;
+    width: 85%;
+  }
+  .essay,
+  .column {
+    display: block;
+  }
+  .column {
+    padding: 0;
+    margin-top: 40px;
+  }
+  .essayList,
+  .columnList {
+    width: auto;
+  }
+  .essayList li,
+  .columnList li {
+    writing-mode: horizontal-tb;
+    -webkit-writing-mode: horizontal-tb;
+    width: auto;
+    height: auto;
+    margin: 20px 0;
+    line-height: 1.2;
+    padding: 30px 20px 40px;
+    float: none;
+  }
+  .essayList li a,
+  .columnList li a {
+    height: auto;
+  }
+}
+
+/* book */
+#book {
+  text-align: center;
+  overflow: hidden;
+  background-image: url(../img/suriken_back.png), url(../img/bright-squares.png);
+  background-color: #000;
+  background-repeat: no-repeat, repeat;
+  background-position: right bottom, left top;
+  background-size: 400px, auto;
+  padding: 30px 0 80px;
+  color: #fff;
+}
+#book h2 {
+  color: #fff;
+}
+.c90 {
+  font-size: 22px;
+  margin: 5px;
+}
+.c90:last-of-type {
+  margin-bottom: 15px;
+}
+.space {
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#1e5799+0,ffffff+25,ffffff+75,7db9e8+100&0+0,1+25,1+75,0+100 */
+  background: -moz-linear-gradient(left,  rgba(30,87,153,0) 0%, rgba(255,255,255,1) 25%, rgba(255,255,255,1) 75%, rgba(125,185,232,0) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(left,  rgba(30,87,153,0) 0%,rgba(255,255,255,1) 25%,rgba(255,255,255,1) 75%,rgba(125,185,232,0) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right,  rgba(30,87,153,0) 0%,rgba(255,255,255,1) 25%,rgba(255,255,255,1) 75%,rgba(125,185,232,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#001e5799', endColorstr='#007db9e8',GradientType=1 ); /* IE6-9 */
+  color: #000;
+  width: 400px;
+  padding: 25px;
+  font-size: 24px;
+  margin: 0 auto;
+  font-weight: bold;
+}
+.cover {
+  display: block;
+  width: 400px;
+  margin: 25px auto 0;
+  border: 1px solid #fff;
+  padding: 5px;
+}
+.price {
+  font-size: 20px;
+  margin: 10px 0 0;
+  font-weight: bold;
+}
+.note {
+  font-size: 18px;
+  margin: 7px 0 0;
+}
+@media screen and (max-width:560px) {
+  #book {
+    background-size: 300px, auto;
+  }
+  .space {
+    font-size: 22px;
+    width: 80%;
+  }
+  .cover {
+    width: 300px;
+  }
+  .note {
+    font-size: 16px;
+  }
+}
+/* footer */
+footer {
+  text-align: center;
+  color: #fff;
+  background: #000;
+  padding: 30px 0;
+  font-family: sans-serif;
+}
+/* ad */
+.tdftad {
+  display: block;
+  background: #000;
+  color: fff;
+　text-decoration: none;
+}

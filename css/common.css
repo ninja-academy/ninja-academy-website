@@ -1,0 +1,69 @@
+@charset "UTF-8";
+
+html,body {
+  height: 100%;
+}
+
+html {
+  background: #fcfcfc;
+}
+
+a {
+  color: currentColor;
+  text-decoration: none;
+}
+
+main {
+  width: 960px;
+  border-color: #ddd;
+  border-style: none solid;
+  border-width: 1px;
+  margin: 0 auto;
+  padding: 30px 0 0;
+  height: 100%;
+  background: #fff;
+}
+
+.columnWrapper {
+  display: table;
+  width: 100%;
+  padding:5px 0 0;
+}
+
+.menu {
+  padding: 0;
+}
+
+.lColumn {
+  width: 25%;
+  display: table-cell;
+  padding: 0 0 0 20px;
+}
+
+.menu li {
+  font-size: 18px;
+  list-style-type: none;
+  border-left: 8px solid #00c700;
+  padding: 0 0 0 8px;
+  margin: 25px 0;
+}
+
+.rColumn {
+  margin: 0 30px 0;
+}
+
+/* member */
+
+.member a {
+  color: #00c700;
+  text-decoration: underline;
+}
+
+/* ad */
+ul.tdftad {
+  position: fixed;
+  bottom: 0;
+  background: #fff;
+  border-top: 1px solid #ddd;
+  width: 100%;
+}

@@ -1,0 +1,100 @@
+@charset "UTF-8";
+body {
+  font-family: sans-serif;
+  background-color: #00000f;
+  text-align: center;
+}
+
+.main {
+  margin: 200px 0 0 0;
+}
+.marquee {
+  width: 600px;
+  margin: 20px auto 0;
+  overflow: hidden;
+  text-align: center;
+}
+.marquee p:after {
+content:"";
+white-space:nowrap;
+padding-right:50px;
+}
+.marquee p {
+  font-size: 24px;
+  padding-left:500px;
+  margin-right: -200px;
+margin:0;
+display:inline-block;
+white-space:nowrap;
+	-webkit-animation-name:marquee;
+	-webkit-animation-timing-function:linear;
+	-webkit-animation-duration:6s;
+	-webkit-animation-iteration-count:infinite;
+	-moz-animation-name:marquee;
+	-moz-animation-timing-function:linear;
+	-moz-animation-duration:6s;
+	-moz-animation-iteration-count:infinite;
+	-ms-animation-name:marquee;
+	-ms-animation-timing-function:linear;
+	-ms-animation-duration:6s;
+	-ms-animation-iteration-count:infinite;
+	-o-animation-name:marquee;
+	-o-animation-timing-function:linear;
+	-o-animation-duration:6s;
+	-o-animation-iteration-count:infinite;
+	animation-name:marquee;
+	animation-timing-function:linear;
+	animation-duration:6s;
+	animation-iteration-count:infinite;
+}
+@-webkit-keyframes marquee {
+  from   { -webkit-transform: translate(0%);}
+  99%,to { -webkit-transform: translate(-100%);}
+
+}
+@-moz-keyframes marquee {
+  from   { -moz-transform: translate(0%);}
+  99%,to { -moz-transform: translate(-100%);}
+}
+@-ms-keyframes marquee {
+  from   { -ms-transform: translate(0%);}
+  99%,to { -ms-transform: translate(-100%);}
+}
+@-o-keyframes marquee {
+  from   { -o-transform: translate(0%);}
+  99%,to { -o-transform: translate(-100%);}
+}
+@keyframes marquee {
+  from   { transform: translate(0%);}
+  99%,to { transform: translate(-100%);}
+}
+.member {
+  color:#00f;
+  font-size:36px;
+  -webkit-animation:blink 0.1s infinite alternate;
+  -moz-animation:blink 0.1s infinite alternate;
+  animation:blink 0.1s infinite alternate;
+}
+@-webkit-keyframes blink{
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+@-moz-keyframes blink{
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+@keyframes blink{
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+.truth {
+  color: #f00;
+  font-weight: bold;
+}
+.enter {
+   font-style:italic;
+   color:#ff0;
+   font-size: 48px;
+   margin-bottom: 50px;
+}
