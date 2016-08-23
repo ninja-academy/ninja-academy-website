@@ -67,3 +67,10 @@ ul.tdftad {
   border-top: 1px solid #ddd;
   width: 100%;
 }
+
+/* bulletin */
+
+.member a {
+  color: #00c700;
+  text-decoration: underline;
+}
